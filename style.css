@@ -1,0 +1,105 @@
+.completed {
+  text-decoration: line-through solid black;
+}
+
+#mover-cima , #mover-baixo {
+  margin: auto;
+  display: block;
+  background-color: transparent;
+  border: none;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  background-color: rgb(58 , 58 , 58);
+  width: 100%;
+  color: white;
+}
+
+body {
+  background-image: url('./img/subtle-prism.svg');
+  height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  width: 80%;
+  margin: auto;
+  padding-bottom: 0.5rem;
+}
+
+.container {
+  width: 80%;
+  padding: 5rem;
+  max-width: 80rem;
+  background: rgba(54 , 175 , 87 , 0.7);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0 , 0 , 0 , 0.1);
+}
+
+.list-group , .list-group-item {
+  background-color: transparent;
+  border: 1px solid rgba(0 , 0 , 0 , 0.4);
+  color: white;
+}
+
+.selected {
+  background-color: gray;
+}
+
+.display-1 {
+  text-align: center;
+  line-height: 1;
+  margin: 0;
+  padding: 0.5rem 0;
+}
+
+button {
+  margin: 0.4rem 0.7rem;
+}
+
+#texto-tarefa {
+  background-color: transparent;
+  color: white;
+  border-color: rgba(0 , 0 , 0 , 0.4);
+}
+
+#texto-tarefa::placeholder {
+  color: rgba(241 , 241 , 241 , 0.6);
+}
+
+#texto-tarefa:focus {
+  box-shadow: -7px 7px 9px -4px rgba(30 , 95 , 47 , 0.5);
+  border-color: rgba(255 , 255 , 255 , 0.4);
+}
+
+.btn-container .btn {
+  width: 170px;
+}
+
+.btn-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+
+#lista-tarefas {
+  max-height: 210px;
+  scrollbar-color: rgba(30 , 95 , 47 , 0.5);
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(30 , 95 , 47 , 0.2);
+}
+::-webkit-scrollbar {
+  width: 6px;
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(30 , 95 , 47 , 0.7);
+  border-radius: 40px;
+}

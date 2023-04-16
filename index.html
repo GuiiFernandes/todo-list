@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>Lista de Tarefas</title>
+</head>
+<body>
+  <header>
+    <div class="head">
+      <h1 class="display-1">Minha Lista de Tarefas</h1>
+      <p id="funcionamento">Clique duas vezes em um item para marcá-lo como completo</p>
+    </div>
+  </header>
+  <div class="container">
+    <div class="input-group mb-3">
+      <input type="text" class="form-control" name="Tarefa" id="texto-tarefa" placeholder="Digite sua tarefa">
+      <button class="btn btn-secondary" id="criar-tarefa">Inserir</button>
+    </div>
+    <div>
+    <button class="btn btn-secondary" id="mover-cima">&#8613;</button>
+    <ol id="lista-tarefas" class="list-group"></ol>
+    <button class="btn btn-secondary" id="mover-baixo">&#8615;</button>
+    <div class="btn-container">
+      <button class="btn btn-secondary" id="apaga-tudo">Apaga Tudo</button>
+      <button class="btn btn-secondary" id="remover-finalizados">Apaga Finalizados</button>
+      <button class="btn btn-secondary" id="remover-selecionado">Apaga Selecionado</button>
+      <button class="btn btn-secondary" id="salvar-tarefas">Salvar Tarefas</button>
+    </div>
+    <div>
+    </div>
+  </div>
+</body>
+<script src="./script.js"></script>
+</html>
