@@ -1,3 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
 .completed {
   text-decoration: line-through solid black;
 }
@@ -19,7 +29,8 @@ header {
 
 body {
   background-image: url('./img/subtle-prism.svg');
-  height: 100vh;
+  min-height: calc(100vh - 7.631rem - 4rem);
+  margin: 7.631rem 0 4rem 0;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
@@ -78,7 +89,7 @@ button {
 }
 
 .btn-container .btn {
-  width: 170px;
+  width: 11rem;
 }
 
 .btn-container {
@@ -102,4 +113,42 @@ button {
 ::-webkit-scrollbar-thumb {
   background: rgba(30 , 95 , 47 , 0.7);
   border-radius: 40px;
+}
+
+footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(54 , 175 , 87);
+  color:white;
+  padding: 5px 0;
+  z-index: 3;
+}
+
+footer > p {
+  margin: 0 3px;
+  padding: 0;
+  width: fit-content;
+}
+
+@media ( max-width: 420px ) {
+
+  body {
+    min-height: calc(100vh - 5.945rem - 3rem);
+    margin: 5.945rem 0 3rem 0;
+  }
+
+  .container {
+    width: 95%;
+    padding: 1rem;
+  }
+
+  #funcionamento {
+    margin: 0 1rem;
+    font-size: 0.92rem;
+  }
+
 }
